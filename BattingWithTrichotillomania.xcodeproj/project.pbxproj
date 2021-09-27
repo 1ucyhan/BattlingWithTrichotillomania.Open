@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		513F63D126FBDA1D0033971C /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F63D026FBDA1D0033971C /* RatingControl.swift */; };
+		513F63D726FBDFAC0033971C /* RecordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F63D626FBDFAC0033971C /* RecordCell.swift */; };
+		513F63D926FBDFF80033971C /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F63D826FBDFF80033971C /* Record.swift */; };
+		513F63DB26FC06E30033971C /* RecordsHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F63DA26FC06E30033971C /* RecordsHistoryViewController.swift */; };
+		5158F10826FD599A0010BBD2 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158F10726FD599A0010BBD2 /* ChatMessageCell.swift */; };
+		5158F10A26FD5A200010BBD2 /* ChatInputContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5158F10926FD5A200010BBD2 /* ChatInputContainerView.swift */; };
+		516B271926FAAA19002413D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B271826FAAA19002413D8 /* AppDelegate.swift */; };
+		516B271B26FAAA19002413D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B271A26FAAA19002413D8 /* SceneDelegate.swift */; };
+		516B271D26FAAA19002413D8 /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B271C26FAAA19002413D8 /* MessagesController.swift */; };
+		516B272226FAAA1A002413D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 516B272126FAAA1A002413D8 /* Assets.xcassets */; };
+		516B272526FAAA1A002413D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 516B272326FAAA1A002413D8 /* LaunchScreen.storyboard */; };
+		516B272E26FAAE12002413D8 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 516B272D26FAAE12002413D8 /* LoginController.swift */; };
+		5184A63D26FB21C4005089C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5184A63C26FB21C4005089C2 /* GoogleService-Info.plist */; };
+		5184A64126FB26EC005089C2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64026FB26EC005089C2 /* Utilities.swift */; };
+		5184A64326FB2A38005089C2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64226FB2A38005089C2 /* Extensions.swift */; };
+		5184A64526FB2A80005089C2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64426FB2A80005089C2 /* User.swift */; };
+		5184A64826FB2B14005089C2 /* LoginController+handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64726FB2B14005089C2 /* LoginController+handlers.swift */; };
+		5184A64A26FB2BDF005089C2 /* ChatBuddysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64926FB2BDF005089C2 /* ChatBuddysController.swift */; };
+		5184A64C26FB3213005089C2 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64B26FB3213005089C2 /* UserCell.swift */; };
+		5184A64F26FB3293005089C2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A64E26FB3293005089C2 /* Message.swift */; };
+		5184A65126FB3357005089C2 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A65026FB3357005089C2 /* ChatLogController.swift */; };
+		51AD37FB2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 51AD37FA2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf */; };
+		51AD37FE2701BF8F00580706 /* lucyhan_bwt_statement.htm in Resources */ = {isa = PBXBuildFile; fileRef = 51AD37FD2701BF8F00580706 /* lucyhan_bwt_statement.htm */; };
+		51BA193626FFF1BD00C80D47 /* RecordAddNewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA193526FFF1BD00C80D47 /* RecordAddNewControl.swift */; };
+		51D3EDC826FE9A10007E83C6 /* BWTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D3EDC726FE9A10007E83C6 /* BWTConstants.swift */; };
+		DD3FE05205FFF036BC84BE3E /* Pods_BattingWithTrichotillomania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5601109672E1B69B19304E82 /* Pods_BattingWithTrichotillomania.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29206DEDF899D55CADFAF715 /* Pods-BattingWithTrichotillomania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BattingWithTrichotillomania.release.xcconfig"; path = "Target Support Files/Pods-BattingWithTrichotillomania/Pods-BattingWithTrichotillomania.release.xcconfig"; sourceTree = "<group>"; };
+		513F63D026FBDA1D0033971C /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		513F63D626FBDFAC0033971C /* RecordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordCell.swift; sourceTree = "<group>"; };
+		513F63D826FBDFF80033971C /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		513F63DA26FC06E30033971C /* RecordsHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsHistoryViewController.swift; sourceTree = "<group>"; };
+		5158F10726FD599A0010BBD2 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		5158F10926FD5A200010BBD2 /* ChatInputContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputContainerView.swift; sourceTree = "<group>"; };
+		516B271526FAAA19002413D8 /* BattingWithTrichotillomania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BattingWithTrichotillomania.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		516B271826FAAA19002413D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		516B271A26FAAA19002413D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		516B271C26FAAA19002413D8 /* MessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		516B272126FAAA1A002413D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		516B272426FAAA1A002413D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		516B272626FAAA1A002413D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		516B272D26FAAE12002413D8 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5184A63C26FB21C4005089C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5184A64026FB26EC005089C2 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		5184A64226FB2A38005089C2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5184A64426FB2A80005089C2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5184A64726FB2B14005089C2 /* LoginController+handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginController+handlers.swift"; sourceTree = "<group>"; };
+		5184A64926FB2BDF005089C2 /* ChatBuddysController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBuddysController.swift; sourceTree = "<group>"; };
+		5184A64B26FB3213005089C2 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		5184A64E26FB3293005089C2 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5184A65026FB3357005089C2 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		51AD37FA2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = how_to_install_homebrew_pod_firebase.rtf; sourceTree = "<group>"; };
+		51AD37FD2701BF8F00580706 /* lucyhan_bwt_statement.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lucyhan_bwt_statement.htm; sourceTree = "<group>"; };
+		51BA193526FFF1BD00C80D47 /* RecordAddNewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordAddNewControl.swift; sourceTree = "<group>"; };
+		51D3EDC726FE9A10007E83C6 /* BWTConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWTConstants.swift; sourceTree = "<group>"; };
+		5601109672E1B69B19304E82 /* Pods_BattingWithTrichotillomania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BattingWithTrichotillomania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FA7E911DA045CFB512913D /* Pods-BattingWithTrichotillomania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BattingWithTrichotillomania.debug.xcconfig"; path = "Target Support Files/Pods-BattingWithTrichotillomania/Pods-BattingWithTrichotillomania.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		516B271226FAAA19002413D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD3FE05205FFF036BC84BE3E /* Pods_BattingWithTrichotillomania.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		516B270C26FAAA19002413D8 = {
+			isa = PBXGroup;
+			children = (
+				516B271726FAAA19002413D8 /* BattingWithTrichotillomania */,
+				516B271626FAAA19002413D8 /* Products */,
+				CB8ED6FFBACFBD66D6B8F97A /* Pods */,
+				9F6D3B9BE8CBE7712A318D47 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		516B271626FAAA19002413D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				516B271526FAAA19002413D8 /* BattingWithTrichotillomania.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		516B271726FAAA19002413D8 /* BattingWithTrichotillomania */ = {
+			isa = PBXGroup;
+			children = (
+				51AD37FC2701BF1200580706 /* notes */,
+				5184A64D26FB322C005089C2 /* View */,
+				5184A64626FB2AAE005089C2 /* Models */,
+				5184A63F26FB26DC005089C2 /* Helpers */,
+				5184A63C26FB21C4005089C2 /* GoogleService-Info.plist */,
+				516B272C26FAAD4E002413D8 /* Controller */,
+				516B271826FAAA19002413D8 /* AppDelegate.swift */,
+				516B271A26FAAA19002413D8 /* SceneDelegate.swift */,
+				516B272126FAAA1A002413D8 /* Assets.xcassets */,
+				516B272326FAAA1A002413D8 /* LaunchScreen.storyboard */,
+				516B272626FAAA1A002413D8 /* Info.plist */,
+			);
+			path = BattingWithTrichotillomania;
+			sourceTree = "<group>";
+		};
+		516B272C26FAAD4E002413D8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				51BA193526FFF1BD00C80D47 /* RecordAddNewControl.swift */,
+				513F63DA26FC06E30033971C /* RecordsHistoryViewController.swift */,
+				5184A65026FB3357005089C2 /* ChatLogController.swift */,
+				5184A64926FB2BDF005089C2 /* ChatBuddysController.swift */,
+				5184A64726FB2B14005089C2 /* LoginController+handlers.swift */,
+				516B271C26FAAA19002413D8 /* MessagesController.swift */,
+				516B272D26FAAE12002413D8 /* LoginController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		5184A63F26FB26DC005089C2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5184A64226FB2A38005089C2 /* Extensions.swift */,
+				5184A64026FB26EC005089C2 /* Utilities.swift */,
+				51D3EDC726FE9A10007E83C6 /* BWTConstants.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		5184A64626FB2AAE005089C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				513F63D826FBDFF80033971C /* Record.swift */,
+				5184A64E26FB3293005089C2 /* Message.swift */,
+				5184A64426FB2A80005089C2 /* User.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5184A64D26FB322C005089C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5158F10926FD5A200010BBD2 /* ChatInputContainerView.swift */,
+				5158F10726FD599A0010BBD2 /* ChatMessageCell.swift */,
+				513F63D626FBDFAC0033971C /* RecordCell.swift */,
+				513F63D026FBDA1D0033971C /* RatingControl.swift */,
+				5184A64B26FB3213005089C2 /* UserCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		51AD37FC2701BF1200580706 /* notes */ = {
+			isa = PBXGroup;
+			children = (
+				51AD37FD2701BF8F00580706 /* lucyhan_bwt_statement.htm */,
+				51AD37FA2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf */,
+			);
+			name = notes;
+			sourceTree = "<group>";
+		};
+		9F6D3B9BE8CBE7712A318D47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5601109672E1B69B19304E82 /* Pods_BattingWithTrichotillomania.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB8ED6FFBACFBD66D6B8F97A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1FA7E911DA045CFB512913D /* Pods-BattingWithTrichotillomania.debug.xcconfig */,
+				29206DEDF899D55CADFAF715 /* Pods-BattingWithTrichotillomania.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		516B271426FAAA19002413D8 /* BattingWithTrichotillomania */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 516B272926FAAA1A002413D8 /* Build configuration list for PBXNativeTarget "BattingWithTrichotillomania" */;
+			buildPhases = (
+				765FFFB13E3162B41C7A4E45 /* [CP] Check Pods Manifest.lock */,
+				516B271126FAAA19002413D8 /* Sources */,
+				516B271226FAAA19002413D8 /* Frameworks */,
+				516B271326FAAA19002413D8 /* Resources */,
+				4EBFB6EA82E92B4F40C560E5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BattingWithTrichotillomania;
+			productName = BattingWithTrichotillomania;
+			productReference = 516B271526FAAA19002413D8 /* BattingWithTrichotillomania.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		516B270D26FAAA19002413D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					516B271426FAAA19002413D8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 516B271026FAAA19002413D8 /* Build configuration list for PBXProject "BattingWithTrichotillomania" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 516B270C26FAAA19002413D8;
+			productRefGroup = 516B271626FAAA19002413D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				516B271426FAAA19002413D8 /* BattingWithTrichotillomania */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		516B271326FAAA19002413D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51AD37FE2701BF8F00580706 /* lucyhan_bwt_statement.htm in Resources */,
+				516B272526FAAA1A002413D8 /* LaunchScreen.storyboard in Resources */,
+				51AD37FB2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf in Resources */,
+				516B272226FAAA1A002413D8 /* Assets.xcassets in Resources */,
+				5184A63D26FB21C4005089C2 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4EBFB6EA82E92B4F40C560E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BattingWithTrichotillomania/Pods-BattingWithTrichotillomania-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BattingWithTrichotillomania/Pods-BattingWithTrichotillomania-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BattingWithTrichotillomania/Pods-BattingWithTrichotillomania-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		765FFFB13E3162B41C7A4E45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BattingWithTrichotillomania-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		516B271126FAAA19002413D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5184A65126FB3357005089C2 /* ChatLogController.swift in Sources */,
+				5184A64C26FB3213005089C2 /* UserCell.swift in Sources */,
+				513F63DB26FC06E30033971C /* RecordsHistoryViewController.swift in Sources */,
+				516B271D26FAAA19002413D8 /* MessagesController.swift in Sources */,
+				5184A64326FB2A38005089C2 /* Extensions.swift in Sources */,
+				5158F10A26FD5A200010BBD2 /* ChatInputContainerView.swift in Sources */,
+				51BA193626FFF1BD00C80D47 /* RecordAddNewControl.swift in Sources */,
+				5158F10826FD599A0010BBD2 /* ChatMessageCell.swift in Sources */,
+				5184A64826FB2B14005089C2 /* LoginController+handlers.swift in Sources */,
+				5184A64A26FB2BDF005089C2 /* ChatBuddysController.swift in Sources */,
+				516B271926FAAA19002413D8 /* AppDelegate.swift in Sources */,
+				5184A64F26FB3293005089C2 /* Message.swift in Sources */,
+				516B272E26FAAE12002413D8 /* LoginController.swift in Sources */,
+				5184A64126FB26EC005089C2 /* Utilities.swift in Sources */,
+				516B271B26FAAA19002413D8 /* SceneDelegate.swift in Sources */,
+				513F63D126FBDA1D0033971C /* RatingControl.swift in Sources */,
+				5184A64526FB2A80005089C2 /* User.swift in Sources */,
+				513F63D926FBDFF80033971C /* Record.swift in Sources */,
+				513F63D726FBDFAC0033971C /* RecordCell.swift in Sources */,
+				51D3EDC826FE9A10007E83C6 /* BWTConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		516B272326FAAA1A002413D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				516B272426FAAA1A002413D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		516B272726FAAA1A002413D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		516B272826FAAA1A002413D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		516B272A26FAAA1A002413D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1FA7E911DA045CFB512913D /* Pods-BattingWithTrichotillomania.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L4623746S;
+				INFOPLIST_FILE = BattingWithTrichotillomania/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucyloveszoe.BattingWithTrichotillomania;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		516B272B26FAAA1A002413D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29206DEDF899D55CADFAF715 /* Pods-BattingWithTrichotillomania.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6L4623746S;
+				INFOPLIST_FILE = BattingWithTrichotillomania/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = lucyloveszoe.BattingWithTrichotillomania;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		516B271026FAAA19002413D8 /* Build configuration list for PBXProject "BattingWithTrichotillomania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				516B272726FAAA1A002413D8 /* Debug */,
+				516B272826FAAA1A002413D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		516B272926FAAA1A002413D8 /* Build configuration list for PBXNativeTarget "BattingWithTrichotillomania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				516B272A26FAAA1A002413D8 /* Debug */,
+				516B272B26FAAA1A002413D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 516B270D26FAAA19002413D8 /* Project object */;
+}

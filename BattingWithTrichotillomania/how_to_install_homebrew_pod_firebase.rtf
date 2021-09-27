@@ -1,0 +1,225 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red16\green60\blue192;
+}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c100000;\cssrgb\c6667\c33333\c80000;
+}
+\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 ==== Environment: MacOS Big Sur, XCode 12.5\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 // Firebase is the database to hold Authentication and Data Persistent Storage\
+// To install Firebase, need install Cocoapods then pod Firebase\
+// To Install Cocoapods, need Gem or Homebrew.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Since Gem failed to work (Ruby interpreter failure @ MacOS SDK level) after my MacOS upgraded to Big Sur and XCode to 12.5, I have to switch out from Gem to use Homebrew.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 1) Install homebrew\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 /bin/bash -c "$(curl -fsSL\'a0{\field{\*\fldinst{HYPERLINK "https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh}})"\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 2) Use brew to install cocoapods\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania % brew install cocoapods\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 ==> Downloading\'a0{\field{\*\fldinst{HYPERLINK "https://ghcr.io/v2/homebrew/core/libyaml/manifests/0.2.5"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://ghcr.io/v2/homebrew/core/libyaml/manifests/0.2.5}}\
+######################################################################## 100.0%\
+==> Downloading\'a0{\field{\*\fldinst{HYPERLINK "https://ghcr.io/v2/homebrew/core/libyaml/blobs/sha256:fe1082f3475a144261b41e2c3e0728b9331911b1cbfadfbc1f3d70d454709154"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://ghcr.io/v2/homebrew/core/libyaml/blobs/sha256:fe1082f3475a144261b41e2c3e0728b9331911b1cbfadfbc1f3d70d454709154}}\
+==> Downloading from\'a0{\field{\*\fldinst{HYPERLINK "https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:fe1082f3475a144261b41e2c3e0728b9331911b1cbfadfbc1f"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:fe1082f3475a144261b41e2c3e0728b9331911b1cbfadfbc1f}}\
+######################################################################## 100.0%\
+==> Downloading\'a0{\field{\*\fldinst{HYPERLINK "https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1l"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://ghcr.io/v2/homebrew/core/openssl/1.1/manifests/1.1.1l}}\
+######################################################################## 100.0%\
+==> Downloading\'a0{\field{\*\fldinst{HYPERLINK "https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:9acf35f49127e7db9a1190c0c19330cd51f925bc3c482b699aaad802be2fe"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://ghcr.io/v2/homebrew/core/openssl/1.1/blobs/sha256:9acf35f49127e7db9a1190c0c19330cd51f925bc3c482b699aaad802be2fe}}\
+==> Downloading from\'a0{\field{\*\fldinst{HYPERLINK "https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:9acf35f49127e7db9a1190c0c19330cd51f925bc3c482b699a"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://pkg-containers.githubusercontent.com/ghcr1/blobs/sha256:9acf35f49127e7db9a1190c0c19330cd51f925bc3c482b699a}}\
+######################################################################## 100.0%\
+==> Downloading\'a0{\field{\*\fldinst{HYPERLINK "https://ghcr.io/v2/homebrew/core/readline/manifests/8.1"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://ghcr.io/v2/homebrew/core/readline/manifests/8.1}}\
+// ...................\
+==> Installation successful!\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 ==> Homebrew has enabled anonymous aggregate formulae and cask analytics.\
+Read the analytics documentation (and how to opt-out) here:\
+\'a0\'a0{\field{\*\fldinst{HYPERLINK "https://docs.brew.sh/Analytics"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://docs.brew.sh/Analytics}}\
+No analytics data has been sent yet (or will be during this `install` run).\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 ==> Homebrew is run entirely by unpaid volunteers. Please consider donating:\
+\'a0\'a0{\field{\*\fldinst{HYPERLINK "https://github.com/Homebrew/brew#donations"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://github.com/Homebrew/brew#donations}}\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 ==> Next steps:\
+- Run these two commands in your terminal to add Homebrew to your PATH:\
+\'a0 \'a0 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/xyz/.zprofile\
+\'a0 \'a0 eval "$(/opt/homebrew/bin/brew shellenv)"\
+- Run `brew help` to get started\
+- Further documentation:\
+\'a0 \'a0{\field{\*\fldinst{HYPERLINK "https://docs.brew.sh/"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://docs.brew.sh}}\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania %\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania % echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/xyz/.zprofile\
+xyz@abc-MacBook-Pro BattingWithTrichotillomania % eval "$(/opt/homebrew/bin/brew shellenv)"\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania % brew help\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Example usage:\
+\'a0 brew search TEXT|/REGEX/\
+\'a0 brew info [FORMULA|CASK...]\
+\'a0 brew install FORMULA|CASK...\
+\'a0 brew update\
+\'a0 brew upgrade [FORMULA|CASK...]\
+\'a0 brew uninstall FORMULA|CASK...\
+\'a0 brew list [FORMULA|CASK...]\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Troubleshooting:\
+\'a0 brew config\
+\'a0 brew doctor\
+\'a0 brew install --verbose --debug FORMULA|CASK\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Contributing:\
+\'a0 brew create URL [--no-fetch]\
+\'a0 brew edit [FORMULA|CASK...]\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Further help:\
+\'a0 brew commands\
+\'a0 brew help [COMMAND]\
+\'a0 man brew\
+\'a0\'a0{\field{\*\fldinst{HYPERLINK "https://docs.brew.sh/"}}{\fldrslt \cf4 \ul \ulc4 \strokec4 https://docs.brew.sh}}\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania %\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 3) After Homebrew+Cocoapods installed, "cd" to the project folder, use full path of homebrew "pod" command to run pod install:\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania % /opt/homebrew/Cellar/cocoapods/1.11.2/bin/pod init\
+[!] Existing Podfile found in directory\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 /////////////// A "podfile" will be created under your project folder. Edit the podfile with following content.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania % cat podfile\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 # Uncomment the next line to define a global platform for your project\
+platform :ios, \'9114.5\'92\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 target 'BattingWithTrichotillomania' do\
+\'a0 # Comment the next line if you don't want to use dynamic frameworks\
+\'a0 use_frameworks!\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \'a0 # Pods for BattingWithTrichotillomania\
+pod 'Firebase/Analytics'\
+pod 'Firebase/Auth'\
+pod 'Firebase/Core'\
+pod 'Firebase/Firestore'\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 end\
+xyz@abc-MacBook-Pro BattingWithTrichotillomania %\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 /////////// Run pod install on top of podfile (which contains Firebase components)\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania % /opt/homebrew/Cellar/cocoapods/1.11.2/bin/pod install\
+Analyzing dependencies\
+Downloading dependencies\
+Installing BoringSSL-GRPC (0.0.7)\
+Installing Firebase (8.7.0)\
+Installing FirebaseAnalytics (8.7.0)\
+Installing FirebaseAuth (8.7.0)\
+Installing FirebaseCore (8.7.0)\
+Installing FirebaseCoreDiagnostics (8.7.0)\
+Installing FirebaseFirestore (8.7.0)\
+Installing FirebaseInstallations (8.7.0)\
+Installing GTMSessionFetcher (1.7.0)\
+Installing GoogleAppMeasurement (8.7.0)\
+Installing GoogleDataTransport (9.1.0)\
+Installing GoogleUtilities (7.5.2)\
+Installing PromisesObjC (2.0.0)\
+Installing abseil (0.20200225.0)\
+Installing gRPC-C++ (1.28.2)\
+Installing gRPC-Core (1.28.2)\
+Installing leveldb-library (1.22.1)\
+Installing nanopb (2.30908.0)\
+Generating Pods project\
+Integrating client project\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 [!] Please close any current Xcode sessions and use `BattingWithTrichotillomania.xcworkspace` for this project from now on.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 Pod installation complete! There are 3 dependencies from the Podfile and 18 total pods installed.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 [!] Smart quotes were detected and ignored in your Podfile. To avoid issues in the future, you should not use TextEdit for editing it. If you are not using TextEdit, you should turn off smart quotes in your editor of choice.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 xyz@abc-MacBook-Pro BattingWithTrichotillomania %\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb1 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 4) Bingo!!!!!!!!!!}
