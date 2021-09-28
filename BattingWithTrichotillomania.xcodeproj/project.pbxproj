@@ -30,6 +30,7 @@
 		5184A65126FB3357005089C2 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5184A65026FB3357005089C2 /* ChatLogController.swift */; };
 		51AD37FB2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 51AD37FA2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf */; };
 		51AD37FE2701BF8F00580706 /* lucyhan_bwt_statement.htm in Resources */ = {isa = PBXBuildFile; fileRef = 51AD37FD2701BF8F00580706 /* lucyhan_bwt_statement.htm */; };
+		51B696F32703144100359FE4 /* 1st-time-checkout-from-githubrepo-fix-firebase-issue.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 51B696F22703144100359FE4 /* 1st-time-checkout-from-githubrepo-fix-firebase-issue.rtf */; };
 		51BA193626FFF1BD00C80D47 /* RecordAddNewControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BA193526FFF1BD00C80D47 /* RecordAddNewControl.swift */; };
 		51D3EDC826FE9A10007E83C6 /* BWTConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D3EDC726FE9A10007E83C6 /* BWTConstants.swift */; };
 		DD3FE05205FFF036BC84BE3E /* Pods_BattingWithTrichotillomania.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5601109672E1B69B19304E82 /* Pods_BattingWithTrichotillomania.framework */; };
@@ -62,6 +63,7 @@
 		5184A65026FB3357005089C2 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
 		51AD37FA2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = how_to_install_homebrew_pod_firebase.rtf; sourceTree = "<group>"; };
 		51AD37FD2701BF8F00580706 /* lucyhan_bwt_statement.htm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lucyhan_bwt_statement.htm; sourceTree = "<group>"; };
+		51B696F22703144100359FE4 /* 1st-time-checkout-from-githubrepo-fix-firebase-issue.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "1st-time-checkout-from-githubrepo-fix-firebase-issue.rtf"; sourceTree = "<group>"; };
 		51BA193526FFF1BD00C80D47 /* RecordAddNewControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordAddNewControl.swift; sourceTree = "<group>"; };
 		51D3EDC726FE9A10007E83C6 /* BWTConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BWTConstants.swift; sourceTree = "<group>"; };
 		5601109672E1B69B19304E82 /* Pods_BattingWithTrichotillomania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BattingWithTrichotillomania.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,6 +169,7 @@
 			children = (
 				51AD37FD2701BF8F00580706 /* lucyhan_bwt_statement.htm */,
 				51AD37FA2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf */,
+				51B696F22703144100359FE4 /* 1st-time-checkout-from-githubrepo-fix-firebase-issue.rtf */,
 			);
 			name = notes;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 				516B272526FAAA1A002413D8 /* LaunchScreen.storyboard in Resources */,
 				51AD37FB2701BEF100580706 /* how_to_install_homebrew_pod_firebase.rtf in Resources */,
 				516B272226FAAA1A002413D8 /* Assets.xcassets in Resources */,
+				51B696F32703144100359FE4 /* 1st-time-checkout-from-githubrepo-fix-firebase-issue.rtf in Resources */,
 				5184A63D26FB21C4005089C2 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
