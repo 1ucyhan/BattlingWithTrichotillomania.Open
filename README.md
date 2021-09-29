@@ -4,8 +4,7 @@
 
 Trichotillomania is a <b> hair-pulling disorder </b> that <b> four out of 100 people </b> in this world. This hair pulling can cause many negative effects both mentally and physically.This can range from small detectable areas to total baldness. The scalp is the most common area, followed by the eyelashes and eyebrows.
 
-See some uncomfortable but absolutely real images from Google for <a href="
-https://www.google.com/search?q=trichotillomania&rlz=1C1GCEA_enUS876US876&sxsrf=AOaemvLZJZnr3KshE7kKWrgymhOlkGZ6sw:1632878061822&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiH9NfmgKPzAhWdDjQIHTokAJIQ_AUoAXoECAEQAw&biw=2560&bih=1432&dpr=1"> TRICHOTILLOMANIA </a>
+See some uncomfortable but absolutely real images from Google for <b><a href="https://www.google.com/search?q=trichotillomania&rlz=1C1GCEA_enUS876US876&sxsrf=AOaemvLZJZnr3KshE7kKWrgymhOlkGZ6sw:1632878061822&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiH9NfmgKPzAhWdDjQIHTokAJIQ_AUoAXoECAEQAw&biw=2560&bih=1432&dpr=1"> TRICHOTILLOMANIA </a></b>
 
 <b> HARMFUL EFFECTS: </b>
 * Increased feelings of depression and anxiety
