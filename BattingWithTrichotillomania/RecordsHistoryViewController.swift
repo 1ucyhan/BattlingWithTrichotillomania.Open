@@ -16,9 +16,11 @@ class RecordsHistoryViewController: UITableViewController {
 
     let cellId = "cellId"
      
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkIfUserIsLoggedIn()
         
         let exitImage   = UIImage(named: "icon-exit")
         let exitButtonItem   = UIBarButtonItem(image: exitImage,  style: .plain, target: self, action: #selector(handleLogout))
@@ -32,13 +34,20 @@ class RecordsHistoryViewController: UITableViewController {
         // Intentionally forbid EDIT, only allow ADD
         navigationItem.leftBarButtonItems = [exitButtonItem]//, self.editButtonItem]
         navigationItem.rightBarButtonItems = [addRecordButtonItem, messagesButtonItem]//, self.editButtonItem]
-                
-        tableView.register(RecordCell.self, forCellReuseIdentifier: cellId)
+          
         
-        checkIfUserIsLoggedIn()
+        tableView.register(RecordCell.self, forCellReuseIdentifier: cellId)
+                       
     }
+  
+
     
-    
+    let nameLabel : UILabel = {
+        let label = UILabel()
+        label.textAlignment = .left
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
     
     
     @objc func handleMessages() {
@@ -81,6 +90,10 @@ class RecordsHistoryViewController: UITableViewController {
                 
                 let user = User(dictionary: dictionary)
                 self.setupNavBarWithUser(user)
+                
+                self.records.removeAll()
+                
+                self.observeUserRecords()
             }
             
            }, withCancel: nil)
@@ -181,14 +194,8 @@ class RecordsHistoryViewController: UITableViewController {
     
     
     
-    func setupNavBarWithUser(_ user: User) {
-        
-        records.removeAll()
-        tableView.reloadData()
-        observeUserRecords()
-        
-        
-        
+    func setupNavBarWithUser(_ user: User)
+    {
         let containerView = UIView()
         containerView.translatesAutoresizingMaskIntoConstraints = false
         containerView.frame = CGRect(x: 0, y: 0, width: 120, height: 40)
@@ -212,12 +219,18 @@ class RecordsHistoryViewController: UITableViewController {
         profileImageView.widthAnchor.constraint(equalToConstant: 36).isActive = true
         profileImageView.heightAnchor.constraint(equalToConstant: 36).isActive = true
         
-        let nameLabel = UILabel()
         
         containerView.addSubview(nameLabel)
         
-        nameLabel.text = user.name
-        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        if user.name!.count > 8
+        {
+            nameLabel.text = user.name!.prefix(8) + "..."
+        }
+        else
+        {
+            nameLabel.text = user.name
+        }
+       
         //need x,y,width,height anchors
         nameLabel.leftAnchor.constraint(equalTo: profileImageView.rightAnchor, constant: 8).isActive = true
         nameLabel.centerYAnchor.constraint(equalTo: profileImageView.centerYAnchor).isActive = true
@@ -225,7 +238,6 @@ class RecordsHistoryViewController: UITableViewController {
         nameLabel.heightAnchor.constraint(equalTo: profileImageView.heightAnchor).isActive = true
                 
         self.navigationItem.titleView = containerView
-        
     }
     
     

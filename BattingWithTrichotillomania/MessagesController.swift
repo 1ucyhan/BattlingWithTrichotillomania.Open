@@ -52,7 +52,7 @@ class MessagesController: UITableViewController {
         let buddysimage = UIImage(named: "icons8-chat-64")
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: buddysimage, style: .plain, target: self, action: #selector(handleNewChat))
         
-        checkIfUserIsLoggedIn()
+        fetchUserAndSetupNavBarTitle()
         
         tableView.register(UserCell.self, forCellReuseIdentifier: cellId)
         
@@ -196,10 +196,6 @@ class MessagesController: UITableViewController {
             }, withCancel: nil)
     }
 
-    
-    func checkIfUserIsLoggedIn() {
-        fetchUserAndSetupNavBarTitle()
-    }
     
     func fetchUserAndSetupNavBarTitle() {
         guard let uid = Auth.auth().currentUser?.uid else {
