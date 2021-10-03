@@ -45,16 +45,47 @@ class LoginController: UIViewController {
         }
     }
     
+    
+    func showError(_ message:String) {
+        
+        errorLabel.text = message
+        errorLabel.alpha = 1
+    }
+    
+    
     func handleLogin() {
-        guard let email = emailTextField.text, let password = passwordTextField.text else {
-            print("Form is not valid")
+        
+        // Validate the fields
+        let error =  validateLoginFields()
+        
+        if error != nil {
+            
+            // There's something wrong with the fields, show error message
+            showError(error!)
             return
         }
-        
+                  
+        // Create cleaned versions of the data
+        let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
         Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
             
             if error != nil {
-                print(error ?? "")
+                if let errCode =  AuthErrorCode(rawValue: error!._code) {
+
+                                    switch errCode {
+                                    case  .invalidEmail:
+                                            self.showError("Invalid email")
+                                    case .accountExistsWithDifferentCredential:
+                                        self.showError("Account Exist with Diff Credential")
+                                   
+                                        default:
+                                            self.showError("Login Error: \(error!)")
+                                    }
+                                }
+                
+                
                 return
             }
             
@@ -145,6 +176,24 @@ class LoginController: UIViewController {
     }()
     
     
+    let errorLabel : UILabel = {
+        let label = UILabel()
+      
+        label.text = ""
+        label.textColor = UIColor.red
+        label.textAlignment = .center
+        label.alpha = 0
+        label.font = UIFont(name: label.font.fontName, size: 14)
+    
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
+        label.sizeToFit()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    
+    
     @objc func tipsLabelClicked(_ sender: Any) {
         UIApplication.shared.open(URL(string: "https://s3.amazonaws.com/lucy.staticwebs3/Battle_With_TRICHOTILLOMANIA/lucyhan_bwt_statement.htm")!, options: [:], completionHandler: nil)
     }
@@ -208,12 +257,21 @@ class LoginController: UIViewController {
 
         view.addSubview(inputsContainerView)
         view.addSubview(loginRegisterButton)
+        view.addSubview(errorLabel)
         view.addSubview((tipsLabel))
        
+        
+        Utilities.styleTextField(nameTextField)
+        Utilities.styleTextField(emailTextField)
+        Utilities.styleTextField(passwordTextField)
+        
+        
         setupLogoImageView()
         setupLoginRegisterSegmentedControl()
         setupInputsContainerView()
         setupLoginRegisterButton()
+        
+        setupErrorLabel()
         
         setupTipsLabel()
     }
@@ -334,6 +392,13 @@ class LoginController: UIViewController {
         tipsLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
     }
     
+    func  setupErrorLabel()
+    {
+        errorLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        errorLabel.topAnchor.constraint(equalTo: loginRegisterButton.bottomAnchor, constant: 6).isActive = true
+        errorLabel.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        errorLabel.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+    }
     
     
     override var preferredStatusBarStyle : UIStatusBarStyle {

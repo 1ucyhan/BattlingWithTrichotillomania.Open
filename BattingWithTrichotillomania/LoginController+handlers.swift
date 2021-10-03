@@ -14,15 +14,42 @@ import Firebase
 extension LoginController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func handleRegister() {
-        guard let email = emailTextField.text, let password = passwordTextField.text, let name = nameTextField.text else {
-            print("Form is not valid")
+        
+        // Validate the fields
+        let error = validateRegistrationFields()
+        
+        if error != nil {
+            
+            // There's something wrong with the fields, show error message
+            showError(error!)
             return
         }
+                    
+            // Create cleaned versions of the data
+            let name = nameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            
+           
         
         Auth.auth().createUser(withEmail: email, password: password, completion: { (user, error) in
             
             if error != nil {
-                print(error!)
+                if let errCode =  AuthErrorCode(rawValue: error!._code) {
+
+                                    switch errCode {
+                                    case  .invalidEmail:
+                                            self.showError("Invalid email")
+                                    case .emailAlreadyInUse:
+                                            self.showError("Email Already in use")
+                                    case .accountExistsWithDifferentCredential:
+                                        self.showError("Account Exist with Diff Credential")
+                                   
+                                        default:
+                                            self.showError("Create User Error: \(error!)")
+                                    }
+                                }
+                
                 return
             }
             
@@ -38,14 +65,14 @@ extension LoginController: UIImagePickerControllerDelegate, UINavigationControll
                 
                 storageRef.putData(uploadData, metadata: nil, completion: { (_, err) in
                     
-                    if let error = error {
-                        print(error)
+                    if error != nil  {
+                        self.showError("Upload Profile Image Error: \(error!)")
                         return
                     }
                     
                     storageRef.downloadURL(completion: { (url, err) in
-                        if let err = err {
-                            print(err)
+                        if err != nil {
+                            self.showError("Get Profile Image DownloadURL Error: \(error!)")
                             return
                         }
                         
@@ -67,7 +94,7 @@ extension LoginController: UIImagePickerControllerDelegate, UINavigationControll
         usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
             
             if err != nil {
-                print(err!)
+                self.showError("Update New User Into Users DB Error: \(err!)")
                 return
             }
             
@@ -115,6 +142,56 @@ extension LoginController: UIImagePickerControllerDelegate, UINavigationControll
         print("canceled picker")
         dismiss(animated: true, completion: nil)
     }
+    
+    // Only need email and password
+    func validateLoginFields() -> String? {
+        
+        // Check that all fields are filled in
+        if
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill in all fields."
+        }
+        
+        // Check if the password is secure
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            // Password isn't secure enough
+            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+        }
+        
+        return nil
+    }
+    
+    
+    // Require name, email, password
+    // profile image is default provided
+    
+    func validateRegistrationFields() -> String? {
+        
+        // Check that all fields are filled in
+        if nameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            
+            return "Please fill in all fields."
+        }
+        
+        // Check if the password is secure
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanedPassword) == false {
+            // Password isn't secure enough
+            return "Please make sure your password is at least 8 characters, contains a special character and a number."
+        }
+        
+        return nil
+    }
+    
+    
+    
     
 }
 
