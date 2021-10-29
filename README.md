@@ -43,5 +43,4 @@ Starting with some tips as I learned to WIN over this bad monster, and hope to g
 And Credits to
 * The great iOS Development Master "Mr. Brain" for his generous sharing and tutorial of <b><a href="https://www.letsbuildthatapp.com/course/Firebase-Chat-Messenger"> "Firebase Chat Massenger"</a> </b> App (I learned and borrowed a lot of code from this excellent vlog)
 * Another fantastic Cooking App which I twisted to be my records docker
-* A great <a href="https://www.inspiritscholars.com/?utm_medium=email&_hsmi=139464789&_hsenc=p2ANqtz-_ezi9d6zZ_sQAlfVLF5d9A51YYVInCNFtISL2fTKlHoA7TDO2b3HI2SWhVwK74uHrAdd5xrWp2SMOlbxlFUaPXAWLjCg&utm_content=139464789&utm_source=hs_email" Standford/MIT AI Scholars program </a> I attended last Winter, really open a new World window
-*
+* A great <a href="https://www.inspiritscholars.com/"> Standford/MIT AI Scholars program </a> I attended last Winter, really open a new World window for me
