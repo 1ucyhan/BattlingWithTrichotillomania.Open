@@ -33,14 +33,15 @@ See some uncomfortable but absolutely real images from Google for <b><a href="ht
 * <b> Read everything you can on the internet about trichotillomania and the treatment plans to deal with it. **</b>
 
 
-"Battle With TRICHOTILLOMANIA" App was built based on the items which have "2-stars" by my personal experience and feeling: 
+"Battle With TRICHOTILLOMANIA" App was built based on the items which have "DOUBLE-Stars" based on my research and personal experience/suffering: 
 * You will find your <b> personal secured history of TRICHOTILLOMANIA records</b>, with images, your own ranking stars (to avoid see the image too much and feel depressed) with timestamp, again, knowing the trend is very very important, only you can access such info.
 * You can also <b> find fellows who sufferred similar pain as you</b>, and you can <b> chat with them securely </b>, by text, or image, or video, let's help each other!
 
+Also I am doing some AI research, hope to enable AI-based emotion detection and tracking records pattern recognition to be "Smarter" -:)
 
-The initial version is just some tips as I learned to WIN over this bad monster, and hope to get more friends to join the TRICHOTILLOMANIA-Beating Fun!
-
-
+Starting with some tips as I learned to WIN over this bad monster, and hope to get more friends to join the TRICHOTILLOMANIA-Beating Fun!
 And Credits to
 * The great iOS Development Master "Mr. Brain" for his generous sharing and tutorial of <b><a href="https://www.letsbuildthatapp.com/course/Firebase-Chat-Messenger"> "Firebase Chat Massenger"</a> </b> App (I learned and borrowed a lot of code from this excellent vlog)
 * Another fantastic Cooking App which I twisted to be my records docker
+* A great <a href="https://www.inspiritscholars.com/?utm_medium=email&_hsmi=139464789&_hsenc=p2ANqtz-_ezi9d6zZ_sQAlfVLF5d9A51YYVInCNFtISL2fTKlHoA7TDO2b3HI2SWhVwK74uHrAdd5xrWp2SMOlbxlFUaPXAWLjCg&utm_content=139464789&utm_source=hs_email" Standford/MIT AI Scholars program </a> I attended last Winter, really open a new World window
+*
