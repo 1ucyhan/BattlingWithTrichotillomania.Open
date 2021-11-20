@@ -50,5 +50,5 @@ Behind this app is so much time, so much effort, and, above all, so much help. T
 * "Mr. Brain" from Youtube! His tutorial of<a href="https://www.letsbuildthatapp.com/course/Firebase-Chat-Messenger"> "Firebase Chat Massenger"</a> made it possible for my code to even work and have functional pages. Please check out his account!
 * An open-source "cooking recipe" code tutorial that I used to record images, ratings, and texts for every daily entry!
 * A great <a href="https://www.inspiritscholars.com/"> Stanford/MIT AI Scholars program </a> I attended last Winter to code emotional detection as a final project! Highly recommend to check them out.
-* Of course, my wonderful, intelligent, and selfless dad: his help cannot be fully explained in words because this app wouldn't exist without him. He gave me courage, advice, and jumpstarted my life as a coder; I cannot thank you enough, 爸爸 《3 
+* Of course, my wonderful, intelligent, and selfless dad. His help cannot be wholely explained in words because this app literally wouldn't exist without him; he gave me courage, advice, and jumpstarted my life as a coder. I cannot thank you enough, 爸爸 《3 
 
