@@ -34,8 +34,9 @@ As a sufferer of trichotillomania myself, I can confirm that these researched ti
 * Watch shows and documentaries about trichotillomania to learn new techniques.*
 * Read everything you can on the internet about trichotillomania and the treatment plans to deal with it.
 
+<br>
 
-![harmful effects](https://user-images.githubusercontent.com/68927641/142718795-b8506a90-b373-4a85-9588-253c8faaac51.png)
+![harmful effects](https://user-images.githubusercontent.com/68927641/142744700-a1477f1e-1311-4ce8-8cfc-c09f2085445b.png)
 As I was creating this app, I thought: what would have helped me through trichotillomania? And how could I communicate these features... digitially?
 
 Currently, this open-source code has:
